@@ -1,6 +1,7 @@
 <h2>Phase d'exploration :</h2>
 Une fois sur le site, on inspecte le code html et on y trouve un commentaire intéressant en bas de l’inspecteur :
-![Image1](https://user-images.githubusercontent.com/112400062/213931165-bd79d9c5-f512-4d41-9e4c-eaba1edbfcbc.png)
+
+![image](https://user-images.githubusercontent.com/112400062/213932974-904c6442-a511-4e59-a225-643fb3a94297.png)
 
 On note l’username : R1ckRul3s
 
@@ -26,13 +27,12 @@ On teste maintenant d’accéder à la page robots.txt comme suis :
  ![image](https://user-images.githubusercontent.com/112400062/213932424-e92276c2-c90f-4483-8f5a-cfc01864624f.png)
 
  
-On atterrit sur une page nous donnant juste :
-
+On atterrit sur une page nous donnant juste:
+ 
  ![image](https://user-images.githubusercontent.com/112400062/213932870-6fff4840-b424-4d0e-8618-7ff0e40aa133.png)
 
  
 On tente alors d’accéder au fichier qui pourrait être nommé ainsi :
-
  ![image](https://user-images.githubusercontent.com/112400062/213932874-c7da660e-6f1f-48a4-b888-15ad33c8aaf4.png)
 
 Mais on ne trouve rien.
