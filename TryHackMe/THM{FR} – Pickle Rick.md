@@ -1,4 +1,5 @@
 <h2>Phase d'exploration :</h2>
+<hr>
 Une fois sur le site, on inspecte le code html et on y trouve un commentaire intéressant en bas de l’inspecteur :
 
 ![image](https://user-images.githubusercontent.com/112400062/213932974-904c6442-a511-4e59-a225-643fb3a94297.png)
@@ -8,6 +9,7 @@ On note l’username : R1ckRul3s
 <hr>
 
 Dans la balise  <head> du code, on y retrouve des liens :
+ 
  ![image](https://user-images.githubusercontent.com/112400062/213931217-6863806e-48d0-4010-a434-9926b6eb044b.png)
 
  
