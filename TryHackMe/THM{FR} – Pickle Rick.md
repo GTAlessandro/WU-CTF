@@ -1,12 +1,14 @@
-<h2>Phase d'exploration :</h2>
-<hr>
+<h2>1. Phase d'exploration :</h2>
+
 Une fois sur le site, on inspecte le code html et on y trouve un commentaire intéressant en bas de l’inspecteur :
 
 ![image](https://user-images.githubusercontent.com/112400062/213932974-904c6442-a511-4e59-a225-643fb3a94297.png)
 
 On note l’username : R1ckRul3s
 
+
 <hr>
+
 
 Dans la balise  <head> du code, on y retrouve des liens :
  
@@ -14,6 +16,7 @@ Dans la balise  <head> du code, on y retrouve des liens :
 
  
 Ces liens mènent à une page précise qui est /assets. On rentre donc le répertoire dans l’url pour tester si l’on peut accéder à la page et on atterrit ici :
+ 
  ![image](https://user-images.githubusercontent.com/112400062/213931290-69695576-adf8-4351-9a2f-a17366eb8ae6.png)
 
  
@@ -21,9 +24,10 @@ Parfait, nous avons donc l’accès au répertoire contenant des fichiers intér
 On y retrouve fail.gif, picklerick.gif et portal.jpg qui n’était pas disponible avant.
 Après inspection du code source des trois images, aucune ne semble donner suite à quelque chose d’intéressant.
 
-
-
-
+ 
+ <hr>
+ 
+ 
 On teste maintenant d’accéder à la page robots.txt comme suis :
  
  ![image](https://user-images.githubusercontent.com/112400062/213932424-e92276c2-c90f-4483-8f5a-cfc01864624f.png)
@@ -35,22 +39,37 @@ On atterrit sur une page nous donnant juste:
 
  
 On tente alors d’accéder au fichier qui pourrait être nommé ainsi :
+ 
  ![image](https://user-images.githubusercontent.com/112400062/213932874-c7da660e-6f1f-48a4-b888-15ad33c8aaf4.png)
 
 Mais on ne trouve rien.
+ 
+ 
+ <hr>
 
+ 
 On passe maintenant à la manière forte avec gobuster, en rajoutant dans notre wordlist le mot que l’on a trouvé dans la page robots.txt :
  
+ ![image](https://user-images.githubusercontent.com/112400062/213933322-e4bcb09f-90c7-4032-bda4-6e71ba6f4bc6.png)
+
+ 
 Le résultat nous retourne :
+ 
+ ![image](https://user-images.githubusercontent.com/112400062/213933325-f24341d1-436c-4055-9fa2-dbf69f8b7c33.png)
+
  
 La page d’accueil ne contient donc pas plus de répertoire que ceux que nous avons déjà découvert.
 On recommence gobuster, mais cette fois-ci dans le répertoire /assets :
  
+ ![image](https://user-images.githubusercontent.com/112400062/213933334-2a7e049d-9dc6-42f9-851a-982bcc4bf7bf.png)
+
+ 
 Aucun résultat
 
+ 
+<hr>
 
-
-
+ 
 Revenons-en à nos moutons, la page principale du site web nous demande de se connecter à l’ordinateur de Rick. On suit donc son conseil à la lettre et pour ce faire, on scan le serveur web pour y trouver ssh un port ssh :
  
 Bingo, le port 22 soit ssh est ouvert !
