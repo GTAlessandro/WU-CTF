@@ -1,4 +1,4 @@
-<h2>1. Phase d'exploration :</h2>
+<h2>Phase d'exploration :</h2>
 
 Une fois sur le site, on inspecte le code html et on y trouve un commentaire intéressant en bas de l’inspecteur :
 
@@ -72,56 +72,117 @@ Aucun résultat
  
 Revenons-en à nos moutons, la page principale du site web nous demande de se connecter à l’ordinateur de Rick. On suit donc son conseil à la lettre et pour ce faire, on scan le serveur web pour y trouver ssh un port ssh :
  
+ ![image](https://user-images.githubusercontent.com/112400062/213942368-70972b22-a0bf-4f66-b184-8bb75b46234d.png)
+
+ 
 Bingo, le port 22 soit ssh est ouvert !
 Sachant que l’on a trouvé un nom d’utilisateur (R1ckRul3s) et un potentiel mot de passe (Wubbalubbadubdub), on tente de s’y connecter :
  
-Impossible de passer par le port…
+ ![image](https://user-images.githubusercontent.com/112400062/213942381-ea0793ab-3e6d-4d10-b6f3-6b529b7956d5.png)
 
+ 
+Impossible de passer par le port…
+ 
+ 
+ <hr>
+
+ 
 On continue en scannant le serveur web avec Nikto :
  
-Le scan nous retourne quelque chose de très intéressant -> une page /login.php
-On tente donc de l’afficher dans le navigateur :
+ ![image](https://user-images.githubusercontent.com/112400062/213942393-d961b09c-1a03-4a3f-b0e4-8b23b7180182.png)
+ 
+ Le scan nous retourne quelque chose de très intéressant -> une page /login.php
+ 
+ 
+ <hr>
  
 
-First Flag !
-La page nous affiche donc :
+ <h2>First Flag !</h2>
+On tente donc de l’afficher dans le navigateur :
  
+ ![image](https://user-images.githubusercontent.com/112400062/213942397-57f866ae-631b-4bc8-bc25-0da9d7c63fdc.png)
+
+
+ La page nous affiche donc :
+ 
+ ![image](https://user-images.githubusercontent.com/112400062/213942479-53581f69-b804-4734-abac-16dc34068a0a.png)
+
 Ce qui est parfait, même pas besoin de se connecter en ssh.
 On rentre donc le nom d’utilisateur et le mot de passe ce qui nous amènes ici :
  
-En rentrant la commande « ls » on trouve :
+ ![image](https://user-images.githubusercontent.com/112400062/213942486-497e766b-2edd-462c-b9ba-1ae7a4ac2bb5.png)
+
+
+ En rentrant la commande « ls » on trouve :
  
+![image](https://user-images.githubusercontent.com/112400062/213942489-0dbf5449-f880-4772-ba45-caa161ff94c5.png)
 
 
+ On ouvre donc le premier fichier .txt :
+ 
+ ![image](https://user-images.githubusercontent.com/112400062/213942496-81a7b50a-fa55-49b9-8e6b-b469342d4444.png)
 
-On ouvre donc le premier fichier .txt :
  
 La commande semble désactiver. On utilise alors l’alternative « less » :
  
-Le premier flag est donc mr. meeseek hair !
+ ![image](https://user-images.githubusercontent.com/112400062/213942569-5aa22441-2e12-4754-9e1f-ce1dc722f63d.png)
 
-Deuxième flag :
+ 
+  Le premier flag est donc <strong>mr. meeseek hair</strong> !
+
+ 
+ <hr>
+ 
+ 
+<h2>Deuxième flag !</h2>
 On continue en affichant le fichier clue.txt qui nous donne un indice :
+  
+  ![image](https://user-images.githubusercontent.com/112400062/213942733-debddf0a-9957-44e0-af33-8d5ed0750a1c.png)
+
  
 On continue donc en regardant dans les fichiers système disponible (30 minutes plus tard), dans le fichier home à la racine, on trouve un répertoire intéressant : 
+  
+  ![image](https://user-images.githubusercontent.com/112400062/213942753-cc6c8356-8e82-4171-bdf3-1a7099b470eb.png)
+
  
 Qui contient lui-même le second ingrédient :
+  
+  ![image](https://user-images.githubusercontent.com/112400062/213942755-853f35d9-6359-43ec-ac8e-03ad1642a43a.png)
+
  
 On affiche le contenue du fichier :
+  
+  ![image](https://user-images.githubusercontent.com/112400062/213942759-10eb94bd-5b3b-454b-94a9-480562790360.png)
+
  
 Ce qui nous donne notre deuxième flag : 
-1 jerry tear
+<strong>1 jerry tear</strong>
+  
+  
+  <hr>
 
-3ème flag
+  
+  <h2>Troisième flag</h2>
 Comme nous n’avons pas d’indice pour le troisième flag, on recommence nos recherches comme au début, en inspectant le code source, nous trouvons ce commentaire :
+  
+  ![image](https://user-images.githubusercontent.com/112400062/213942807-ae9d44b7-a83f-4e46-a1af-f85f00de341e.png)
+
  
 Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0==
 Ça forme est tout de suite identifiable, ce message est encodé en base64. On le décode en ligne avec le site -> dcode base64 et le résultat nous retourne encore un message coder, en continuant comme ça 7 fois le résultat est « rabbit hole » … On s’est fait avoir.
 
 Après plusieurs recherche rien n’est concluant donc on continue de chercher dans les fichiers de l’ordinateur de Rick, on utilise la commande sudo -l pour savoir quels sont les commandes que l’on peut utiliser :
+  ![image](https://user-images.githubusercontent.com/112400062/213942818-68df2b81-f67a-4396-be0e-225f823a73ce.png)
+
  
 Visiblement toute les commandes sont autorisées. On liste donc les fichiers du répertoire root : 
+  
+  ![image](https://user-images.githubusercontent.com/112400062/213942826-f3770ffa-9b7a-42f9-a6b3-213dac20ddc0.png)
+
  
 Parfait, on a trouvé le 3ème flag. On affiche son contenu :
+  
+  ![image](https://user-images.githubusercontent.com/112400062/213942831-1d6224e2-2f9e-4f04-b7bd-82a4dc3852b3.png)
+
  
-Le 3ème ingrédient est : fleeb juice 
+Le 3ème ingrédient est : <strong>fleeb juice </strong>
