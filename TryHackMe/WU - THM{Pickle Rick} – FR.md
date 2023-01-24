@@ -123,12 +123,8 @@ On rentre donc le nom d’utilisateur et le mot de passe ce qui nous amènes ici
  ![image](https://user-images.githubusercontent.com/112400062/213942496-81a7b50a-fa55-49b9-8e6b-b469342d4444.png)
 
  
-La commande semble désactiver. On utilise alors l’alternative « less » :
- 
- ![image](https://user-images.githubusercontent.com/112400062/213942569-5aa22441-2e12-4754-9e1f-ce1dc722f63d.png)
-
- 
-  Le premier flag est donc <strong>mr. meeseek hair</strong> !
+La commande semble désactiver. On utilise alors l’alternative « less »
+Le premier flag est trouvé !
 
  
  <hr>
@@ -150,13 +146,7 @@ Qui contient lui-même le second ingrédient :
   ![image](https://user-images.githubusercontent.com/112400062/213942755-853f35d9-6359-43ec-ac8e-03ad1642a43a.png)
 
  
-On affiche le contenue du fichier :
-  
-  ![image](https://user-images.githubusercontent.com/112400062/213942759-10eb94bd-5b3b-454b-94a9-480562790360.png)
-
- 
-Ce qui nous donne notre deuxième flag : 
-<strong>1 jerry tear</strong>
+On affiche le contenue du fichier, ce qui nous donne notre deuxième flag
   
   
   <hr>
@@ -180,9 +170,4 @@ Visiblement toute les commandes sont autorisées. On liste donc les fichiers du 
   ![image](https://user-images.githubusercontent.com/112400062/213942826-f3770ffa-9b7a-42f9-a6b3-213dac20ddc0.png)
 
  
-Parfait, on a trouvé le 3ème flag. On affiche son contenu :
-  
-  ![image](https://user-images.githubusercontent.com/112400062/213942831-1d6224e2-2f9e-4f04-b7bd-82a4dc3852b3.png)
-
- 
-Le 3ème ingrédient est : <strong>fleeb juice </strong>
+Parfait, on a trouvé le 3ème flag.
