@@ -123,7 +123,10 @@ On rentre donc le nom d’utilisateur et le mot de passe ce qui nous amènes ici
  ![image](https://user-images.githubusercontent.com/112400062/213942496-81a7b50a-fa55-49b9-8e6b-b469342d4444.png)
 
  
-La commande semble désactiver. On utilise alors l’alternative « less »
+La commande semble désactiver. On utilise alors l’alternative « less » :
+
+ ![image](https://user-images.githubusercontent.com/112400062/214364315-859a44b1-b5e3-4306-8f88-0fba4f2e4bd5.png)
+
 Le premier flag est trouvé !
 
  
@@ -146,7 +149,11 @@ Qui contient lui-même le second ingrédient :
   ![image](https://user-images.githubusercontent.com/112400062/213942755-853f35d9-6359-43ec-ac8e-03ad1642a43a.png)
 
  
-On affiche le contenue du fichier, ce qui nous donne notre deuxième flag
+On affiche le contenue du fichier :
+ 
+ ![image](https://user-images.githubusercontent.com/112400062/214364395-a9254716-8b01-402f-a731-31359ed23790.png)
+
+ ce qui nous donne notre deuxième flag.
   
   
   <hr>
