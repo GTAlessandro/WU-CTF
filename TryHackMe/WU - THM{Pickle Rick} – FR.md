@@ -70,7 +70,7 @@ Aucun résultat
 <hr>
 
  
-Revenons-en à nos moutons, la page principale du site web nous demande de se connecter à l’ordinateur de Rick. On suit donc son conseil à la lettre et pour ce faire, on scan le serveur web pour y trouver ssh un port ssh :
+Revenons-en à nos moutons, la page principale du site web nous demande de se connecter à l’ordinateur de Rick. On suit donc son conseil à la lettre et pour ce faire, on scan le serveur web pour y trouver un port ssh :
  
  ![image](https://user-images.githubusercontent.com/112400062/213942368-70972b22-a0bf-4f66-b184-8bb75b46234d.png)
 
