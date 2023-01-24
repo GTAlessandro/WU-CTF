@@ -170,4 +170,7 @@ Visiblement toute les commandes sont autorisées. On liste donc les fichiers du 
   ![image](https://user-images.githubusercontent.com/112400062/213942826-f3770ffa-9b7a-42f9-a6b3-213dac20ddc0.png)
 
  
-Parfait, on a trouvé le 3ème flag.
+Parfait, on a trouvé le 3ème flag. On l'affiche comme ceci :
+ ![image](https://user-images.githubusercontent.com/112400062/214363986-640b5de9-4d76-4406-8519-c475ecef7a46.png)
+
+ 
